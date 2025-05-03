@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spacemap"
+version = "0.1.0"
+description = "SpaceMAP: A dimensionality reduction method utilizing local and global intrinsic dimensions."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Xinrui Zu", email = "zuxinrui@example.com" }
+]
+requires-python = ">=3.6"
+dependencies = [
+  "numpy>=1.18",
+  "scipy>=1.4",
+  "scikit-learn>=0.24",
+  "numba>=0.55",
+  "pynndescent>=0.5",
+  "torch",
+  "faiss-cpu",
+  "matplotlib>=3.7.0",
+  "pandas",
+  "datashader",
+  "bokeh",
+  "holoviews>=1.14.0", 
+  "param>=1.12.0", 
+  "scikit-image",
+  "colorcet",
+  "tensorflow"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[tool.setuptools.packages.find]
+include = ["spacemap", "spacemap.umap_utils*"] 

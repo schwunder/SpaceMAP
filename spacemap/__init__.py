@@ -1,4 +1,4 @@
-from _spacemap import SpaceMAP
+from ._spacemap import SpaceMAP
 
 import numba
 

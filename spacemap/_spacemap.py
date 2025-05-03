@@ -18,11 +18,11 @@ except ImportError:
 import numpy as np
 import scipy.sparse
 
-from umap_utils.spectral import spectral_layout  # ONLY for spectral initialization
-from _layouts import spacemap_optimization
+from .umap_utils.spectral import spectral_layout  # ONLY for spectral initialization
+from ._layouts import spacemap_optimization
 import faiss
 
-from _utils import *
+from ._utils import *
 
 locale.setlocale(locale.LC_NUMERIC, "C")
 

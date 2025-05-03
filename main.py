@@ -18,7 +18,7 @@ import torchvision.transforms as transforms
 
 import matplotlib
 
-from _spacemap import SpaceMAP
+from spacemap._spacemap import SpaceMAP
 
 
 # 1) Load MNIST dataset
